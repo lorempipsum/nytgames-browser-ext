@@ -1,0 +1,27 @@
+# Dependencies & virtual environments
+node_modules/
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+
+# Distribution & build outputs
+dist/
+build/
+*.zip
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables & secrets
+.env
+.env.*

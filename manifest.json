@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "NYT Mini Crossword Date Navigator",
+  "author": "www.sandroid.dev",
+  "version": "1.0.0",
+  "description": "Jump between NYT Mini crosswords by Year, Month, or Day with on-screen buttons and keyboard shortcuts.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.nytimes.com/crosswords/game/mini*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "NYT Mini Date Navigator",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NYT Mini Navigator</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 14px 16px;
+      width: 260px;
+      color: #121212;
+      background: #ffffff;
+    }
+    h1 {
+      font-size: 15px;
+      margin: 0 0 4px 0;
+      font-weight: 700;
+    }
+    p {
+      font-size: 12px;
+      color: #555555;
+      margin: 0 0 12px 0;
+      line-height: 1.4;
+    }
+    .shortcuts {
+      background: #f7f7f7;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 12px;
+    }
+    .shortcut-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      padding: 3px 0;
+    }
+    kbd {
+      font-family: monospace;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+      padding: 1px 5px;
+      font-size: 11px;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #121212;
+      color: #ffffff;
+      border: 1px solid #121212;
+    }
+    .btn-primary:hover {
+      background: #333333;
+    }
+    .btn-secondary {
+      background: #ffffff;
+      color: #121212;
+      border: 1px solid #cccccc;
+    }
+    .btn-secondary:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Mini Navigator</h1>
+  <p>Buttons appear in the puzzle header to jump by year, month, or day.</p>
+
+  <div class="shortcuts">
+    <div class="shortcut-row">
+      <span>Next Year</span>
+      <kbd>Alt + Y</kbd>
+    </div>
+    <div class="shortcut-row">
+      <span>Prev Year</span>
+      <kbd>Alt + Shift + Y</kbd>
+    </div>
+    <div class="shortcut-row">
+      <span>Next Month</span>
+      <kbd>Alt + M</kbd>
+    </div>
+    <div class="shortcut-row">
+      <span>Next Day</span>
+      <kbd>Alt + D</kbd>
+    </div>
+  </div>
+
+  <div class="actions">
+    <a href="https://www.nytimes.com/crosswords/game/mini/2014/10/10" target="_blank" class="btn btn-primary">Open 2014-10-10</a>
+    <a href="https://www.nytimes.com/crosswords/game/mini" target="_blank" class="btn btn-secondary">Open Today's Mini</a>
+  </div>
+</body>
+</html>
