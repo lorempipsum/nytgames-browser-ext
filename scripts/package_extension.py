@@ -5,11 +5,13 @@ import zipfile
 
 INCLUDED_FILES = [
     "manifest.json",
+    "navigation.js",
     "content.js",
     "content.css",
     "popup.html",
     "README.md",
     "LICENSE",
+    "PRIVACY.md",
 ]
 
 INCLUDED_DIRS = [
@@ -21,7 +23,7 @@ def main():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     dist_dir = os.path.join(root_dir, "dist")
     os.makedirs(dist_dir, exist_ok=True)
-    zip_path = os.path.join(dist_dir, "nyt-mini-date-navigator.zip")
+    zip_path = os.path.join(dist_dir, "crossword-date-navigator.zip")
 
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
         for fname in INCLUDED_FILES:

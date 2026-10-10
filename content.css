@@ -1,20 +1,20 @@
-/* NYT Mini Date Navigator Extension Styles */
+/* Crossword Date Navigator Extension Styles */
 
-.xwd__header--row {
+.xwd__header--row.crossword-date-nav-host {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: space-between !important;
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important;
 }
 
-.xwd__header--row .xwd__header--puzzle-details-container {
+.crossword-date-nav-host .xwd__header--puzzle-details-container {
   width: auto !important;
   flex: 1 1 auto !important;
   padding-right: 12px !important;
 }
 
-.nyt-mini-nav {
+.crossword-date-nav {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -25,7 +25,7 @@
   user-select: none;
 }
 
-.nyt-mini-nav-group {
+.crossword-date-nav-group {
   display: inline-flex;
   align-items: stretch;
   border: 1px solid #121212;
@@ -36,7 +36,7 @@
   height: 32px;
 }
 
-.nyt-mini-nav-btn {
+.crossword-date-nav-btn {
   font-family: inherit;
   font-size: 13px;
   font-weight: 600;
@@ -55,46 +55,46 @@
   white-space: nowrap;
 }
 
-.nyt-mini-nav-btn:hover {
+.crossword-date-nav-btn:hover {
   background-color: #f0f0f0;
   color: #000000;
 }
 
-.nyt-mini-nav-btn:active {
+.crossword-date-nav-btn:active {
   background-color: #e2e2e2;
 }
 
 /* Decrement (−) stepper button */
-.nyt-mini-nav-dec {
+.crossword-date-nav-dec {
   padding: 0 9px;
   border-right: 1px solid #e0e0e0;
   color: #555555;
   font-size: 14px;
 }
 
-.nyt-mini-nav-dec:hover {
+.crossword-date-nav-dec:hover {
   background-color: #f0f0f0;
   color: #000000;
 }
 
 /* Primary Year button (stands out in dark fill) */
-.nyt-mini-nav-primary {
+.crossword-date-nav-primary {
   background-color: #121212;
   color: #ffffff;
   font-weight: 700;
 }
 
-.nyt-mini-nav-primary:hover {
+.crossword-date-nav-primary:hover {
   background-color: #333333;
   color: #ffffff;
 }
 
-.nyt-mini-nav-primary:active {
+.crossword-date-nav-primary:active {
   background-color: #000000;
 }
 
 /* Disabled state */
-.nyt-mini-nav-btn.is-disabled {
+.crossword-date-nav-btn.is-disabled {
   opacity: 0.35;
   cursor: not-allowed;
   pointer-events: none;
@@ -103,7 +103,7 @@
 }
 
 /* Modal completion button */
-.nyt-mini-modal-nav-btn {
+.crossword-date-modal-nav-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -121,22 +121,22 @@
   transition: background-color 0.15s ease;
 }
 
-.nyt-mini-modal-nav-btn:hover {
+.crossword-date-modal-nav-btn:hover {
   background-color: #333333;
 }
 
 @media (max-width: 768px) {
-  .nyt-mini-nav {
+  .crossword-date-nav {
     gap: 4px;
   }
-  .nyt-mini-nav-group {
+  .crossword-date-nav-group {
     height: 28px;
   }
-  .nyt-mini-nav-btn {
+  .crossword-date-nav-btn {
     font-size: 11px;
     padding: 0 8px;
   }
-  .nyt-mini-nav-dec {
+  .crossword-date-nav-dec {
     padding: 0 6px;
     font-size: 12px;
   }
